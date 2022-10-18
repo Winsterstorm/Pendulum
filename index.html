@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src = "double_pendulum.js"></script>
+</head>
+<body style="background-color: skyblue;">
+	
+	<canvas style="border: 1px solid black;background-color: whitesmoke; " id="canvas_example" width="550" height="550"></canvas>
+
+	<input type="button" id = "start" style="background-color: lime;" value= "start">
+	<input type="button" id = "pause" style= "background-color: yellow;"value= "pause">
+	<input type="button" id = "restart" style="background-color: red" value= "restart"> <br>
+	Численное решение
+    <input type="checkbox" id = "num" checked >
+    Аналитическое решение
+	<input type="checkbox" id = "anal" ><br>
+	<input type="range" style = "margin-left: 100px;"id = "sl_m1" min = "5" max= "50" step = "1" value = "5">
+	<input type="range" id = "sl_m2" min = "5" max= "50" step = "1" value = "5"> <br>
+
+	<input type="text" style="width: 40px;" id = "justText1" value= "Угол 1" readonly >
+	<input type="text" style="width: 40px;" id = "justText2" value= "Угол 2" readonly> 
+	<input type="text" style="width: 50px; margin-left: 35px " id = "Mass_1" value= "Масса 1" readonly >
+	<input type="text" style="width: 50px; margin-left: 70px " id = "Mass_2" value= "Масса 2" readonly> <br>
+	
+	<input type="text" style="width: 40px;" id = "forDelta1" value= "90" readonly >
+	<input type="text" style="width: 40px;" id = "forDelta2" value= "90" readonly> 
+	<input type="text" style="width: 20px; margin-left: 50px ;" id = "m1_v" value = "5" readonly>
+	<input type="text" style="width: 20px; margin-left: 100px ;" id = "m2_v" value = "5" readonly>
+	
+
+
+
+</body>
+</html>
